@@ -1,0 +1,1521 @@
+{
+  "users": [
+    {
+      "id": "UID-ADMIN",
+      "email": "admin@glorysimon.com",
+      "name": "Admin User",
+      "role": "Admin",
+      "createdAt": "2026-06-19T10:00:00.000Z"
+    },
+    {
+      "id": "UID-DESIGNER",
+      "email": "designer@glorysimon.com",
+      "name": "Design Lead",
+      "role": "Interior Designer",
+      "createdAt": "2026-06-19T10:00:00.000Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "CLI-001",
+      "name": "David Harrison",
+      "email": "david.h@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "location": "Brooklyn",
+      "status": "Proposal",
+      "createdAt": "2026-05-15T12:00:00.000Z"
+    },
+    {
+      "id": "CLI-002",
+      "name": "Sonia Martinez",
+      "email": "sonia.m@example.com",
+      "phone": "555-0144",
+      "address": "89 Broadway St",
+      "projectType": "Commercial",
+      "location": "Manhattan",
+      "status": "Proposal",
+      "createdAt": "2026-05-20T12:00:00.000Z"
+    },
+    {
+      "id": "CLI-003",
+      "name": "Marcus Vance",
+      "email": "marcus.v@example.com",
+      "phone": "555-0168",
+      "address": "32 Oakridge Ln",
+      "projectType": "Residential",
+      "location": "Queens",
+      "status": "Signed",
+      "createdAt": "2026-05-10T12:00:00.000Z"
+    },
+    {
+      "id": "CLI-004",
+      "name": "Emily Watson",
+      "email": "emily.w@example.com",
+      "phone": "555-0122",
+      "address": "512 Pinecrest Road",
+      "projectType": "Residential",
+      "location": "Staten Island",
+      "status": "Lead",
+      "createdAt": "2026-06-01T12:00:00.000Z"
+    },
+    {
+      "id": "CLI-005",
+      "name": "Robert Downey",
+      "email": "tony@starkcorp.com",
+      "phone": "555-0185",
+      "address": "10880 Malibu Point",
+      "projectType": "Commercial",
+      "location": "Upstate NY",
+      "status": "Audit",
+      "createdAt": "2026-06-10T12:00:00.000Z"
+    },
+    {
+      "id": "CLI-006",
+      "name": "Alice Miller",
+      "email": "alice@example.com",
+      "phone": "555-9088",
+      "address": "123 Maple Street",
+      "location": "123 Maple Street",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-19T14:43:25.593Z"
+    },
+    {
+      "id": "CLI-007",
+      "name": "Glory Simon Client",
+      "email": "glory.client@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "location": "Springfield",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-19T15:42:07.375Z"
+    },
+    {
+      "id": "CLI-008",
+      "name": "Glory Simon Client",
+      "email": "glory.client@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "location": "Springfield",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-19T15:42:35.350Z"
+    },
+    {
+      "id": "CLI-009",
+      "name": "Glory Simon Client",
+      "email": "glory.client@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "location": "Springfield",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-19T15:43:09.252Z"
+    },
+    {
+      "id": "CLI-010",
+      "name": "Glory Simon Client",
+      "email": "glory.client@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "location": "Springfield",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-20T03:02:39.515Z"
+    },
+    {
+      "id": "CLI-011",
+      "name": "Glory Simon Client",
+      "email": "glory.client@example.com",
+      "phone": "555-0199",
+      "address": "742 Evergreen Terrace",
+      "location": "Springfield",
+      "projectType": "Residential",
+      "status": "Signed",
+      "createdAt": "2026-06-20T03:57:43.724Z"
+    },
+    {
+      "id": "CLI-012",
+      "name": "Integration Test Client 1782134855772",
+      "email": "integration.test@example.com",
+      "phone": "555-0999",
+      "address": "999 Design Blvd",
+      "location": "Manhattan",
+      "projectType": "Residential",
+      "status": "Proposal",
+      "createdAt": "2026-06-22T13:27:35.775Z"
+    },
+    {
+      "id": "CLI-013",
+      "name": "Praisy Rachamadugu",
+      "email": "praisy515@gmail.com",
+      "phone": "+919491081129",
+      "address": "",
+      "location": "Telangana",
+      "projectType": "Residential",
+      "status": "Lead",
+      "createdAt": "2026-06-22T13:34:34.092Z"
+    },
+    {
+      "id": "CLI-014",
+      "name": "Integration Test Client 1782307431195",
+      "email": "integration.test@example.com",
+      "phone": "555-0999",
+      "address": "999 Design Blvd",
+      "location": "Manhattan",
+      "projectType": "Residential",
+      "status": "Proposal",
+      "createdAt": "2026-06-24T13:23:51.199Z"
+    },
+    {
+      "id": "CLI-015",
+      "name": "Integration Test Client 1782307646451",
+      "email": "integration.test@example.com",
+      "phone": "555-0999",
+      "address": "999 Design Blvd",
+      "location": "Manhattan",
+      "projectType": "Residential",
+      "status": "Proposal",
+      "createdAt": "2026-06-24T13:27:26.457Z"
+    },
+    {
+      "id": "CLI-016",
+      "name": "Pravallika",
+      "email": "vpravallika@gmail.com",
+      "phone": "7993636611",
+      "address": "1-679 rudrampeta bypass anantapur",
+      "location": "Telangana",
+      "projectType": "Residential",
+      "status": "Lead",
+      "createdAt": "2026-06-24T13:32:26.062Z"
+    }
+  ],
+  "siteVisits": [
+    {
+      "id": "SV-001",
+      "clientId": "CLI-001",
+      "clientName": "David Harrison",
+      "visitDate": "2026-06-21T10:30:00.000Z",
+      "time": "10:30 AM",
+      "address": "742 Evergreen Terrace, Brooklyn",
+      "location": "742 Evergreen Terrace, Brooklyn",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "status": "Scheduled",
+      "notes": "Material catalog walk-through and final space scanning.",
+      "createdAt": "2026-06-19T10:00:00.000Z"
+    },
+    {
+      "id": "SV-002",
+      "clientId": "CLI-002",
+      "clientName": "Sonia Martinez",
+      "visitDate": "2026-06-23T14:00:00.000Z",
+      "time": "02:00 PM",
+      "address": "89 Broadway St, Manhattan",
+      "location": "89 Broadway St, Manhattan",
+      "assignedDesigner": "Alex Rivera",
+      "designer": "Alex Rivera",
+      "status": "Scheduled",
+      "notes": "Site measurement and initial floor plan alignment.",
+      "createdAt": "2026-06-19T11:00:00.000Z"
+    },
+    {
+      "id": "SV-003",
+      "clientId": "CLI-003",
+      "clientName": "Marcus Vance",
+      "visitDate": "2026-06-14T16:30:00.000Z",
+      "time": "04:30 PM",
+      "address": "32 Oakridge Ln, Queens",
+      "location": "32 Oakridge Ln, Queens",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "status": "Completed",
+      "notes": "Initial consultation done. Quotation request generated.",
+      "createdAt": "2026-06-12T10:00:00.000Z"
+    },
+    {
+      "id": "SV-004",
+      "clientId": "CLI-005",
+      "clientName": "Robert Downey",
+      "visitDate": "2026-06-25T11:00:00.000Z",
+      "time": "11:00 AM",
+      "address": "10880 Malibu Point, Upstate NY",
+      "location": "10880 Malibu Point, Upstate NY",
+      "assignedDesigner": "Glory Simon",
+      "designer": "Glory Simon",
+      "status": "Scheduled",
+      "notes": "Elite client site inspection.",
+      "createdAt": "2026-06-19T12:00:00.000Z"
+    },
+    {
+      "id": "SV-005",
+      "clientId": "CLI-006",
+      "clientName": "Alice Miller",
+      "visitDate": "2026-06-22T09:00:00.000Z",
+      "time": "09:00 AM",
+      "address": "123 Maple Street",
+      "location": "123 Maple Street",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial bedroom layout measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-19T14:43:25.633Z"
+    },
+    {
+      "id": "SV-006",
+      "clientId": "CLI-007",
+      "clientName": "Glory Simon Client",
+      "visitDate": "2026-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "address": "742 Evergreen Terrace",
+      "location": "742 Evergreen Terrace",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial blueprint measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-19T15:42:07.391Z"
+    },
+    {
+      "id": "SV-007",
+      "clientId": "CLI-008",
+      "clientName": "Glory Simon Client",
+      "visitDate": "2026-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "address": "742 Evergreen Terrace",
+      "location": "742 Evergreen Terrace",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial blueprint measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-19T15:42:35.361Z"
+    },
+    {
+      "id": "SV-008",
+      "clientId": "CLI-009",
+      "clientName": "Glory Simon Client",
+      "visitDate": "2026-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "address": "742 Evergreen Terrace",
+      "location": "742 Evergreen Terrace",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial blueprint measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-19T15:43:09.278Z"
+    },
+    {
+      "id": "SV-009",
+      "clientId": "CLI-010",
+      "clientName": "Glory Simon Client",
+      "visitDate": "2026-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "address": "742 Evergreen Terrace",
+      "location": "742 Evergreen Terrace",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial blueprint measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-20T03:02:39.535Z"
+    },
+    {
+      "id": "SV-010",
+      "clientId": "CLI-011",
+      "clientName": "Glory Simon Client",
+      "visitDate": "2026-06-25T10:00:00.000Z",
+      "time": "10:00 AM",
+      "address": "742 Evergreen Terrace",
+      "location": "742 Evergreen Terrace",
+      "assignedDesigner": "Sarah Jenkins",
+      "designer": "Sarah Jenkins",
+      "notes": "Initial blueprint measurement",
+      "status": "Scheduled",
+      "createdAt": "2026-06-20T03:57:43.734Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "Q-2026-001",
+      "clientId": "CLI-001",
+      "clientName": "David Harrison",
+      "phone": "555-0199",
+      "email": "david.h@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Brooklyn",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "Complete redesign of living area including modular cabinetry, custom paint, false ceiling with cove lighting and brand new sectional seating arrangement.",
+      "materialLevel": "Premium",
+      "materialQuality": "Premium",
+      "furnitureItems": [
+        "Sofa",
+        "TV Unit"
+      ],
+      "furnitureOptions": {
+        "wardrobe": false,
+        "modularKitchen": false,
+        "tvUnit": true,
+        "falseCeiling": true,
+        "studyTable": false,
+        "storageUnits": true
+      },
+      "lightingType": "Smart Lighting",
+      "labourCost": 15000,
+      "tax": 18,
+      "taxPercentage": 18,
+      "discount": 5,
+      "discountPercentage": 5,
+      "subtotal": 112000,
+      "total": 126560,
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-05T10:00:00.000Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-05T11:00:00.000Z"
+        }
+      ],
+      "costBreakdown": {
+        "materialCost": 81000,
+        "furnitureCost": 16000,
+        "lightingCost": 25000,
+        "labourCost": 15000,
+        "subtotal": 112000,
+        "taxAmount": 20160,
+        "discountAmount": 5600,
+        "grandTotal": 126560
+      },
+      "createdAt": "2026-06-05T10:00:00.000Z"
+    },
+    {
+      "id": "Q-2026-002",
+      "clientId": "CLI-002",
+      "clientName": "Sonia Martinez",
+      "phone": "555-0144",
+      "email": "sonia.m@example.com",
+      "address": "89 Broadway St",
+      "projectType": "Commercial",
+      "projectLocation": "Manhattan",
+      "roomType": "Office",
+      "area": 1200,
+      "numRooms": 3,
+      "scopeOfWork": "Interior design of 3 executive cabins and reception lounge.",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [
+        "Workstation"
+      ],
+      "furnitureOptions": {
+        "wardrobe": false,
+        "modularKitchen": false,
+        "tvUnit": false,
+        "falseCeiling": true,
+        "studyTable": true,
+        "storageUnits": true
+      },
+      "lightingType": "Decorative Lighting",
+      "labourCost": 25000,
+      "tax": 18,
+      "taxPercentage": 18,
+      "discount": 10,
+      "discountPercentage": 10,
+      "subtotal": 247000,
+      "total": 266760,
+      "status": "Pending",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-12T10:00:00.000Z"
+        }
+      ],
+      "costBreakdown": {
+        "materialCost": 210000,
+        "furnitureCost": 15000,
+        "lightingCost": 12000,
+        "labourCost": 25000,
+        "subtotal": 247000,
+        "taxAmount": 44460,
+        "discountAmount": 24700,
+        "grandTotal": 266760
+      },
+      "createdAt": "2026-06-12T10:00:00.000Z"
+    },
+    {
+      "id": "Q-2026-003",
+      "clientId": "CLI-006",
+      "clientName": "Alice Miller",
+      "phone": "555-9088",
+      "email": "alice@example.com",
+      "address": "123 Maple Street",
+      "projectType": "Residential",
+      "projectLocation": "",
+      "roomType": "Bedroom",
+      "area": 350,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Premium",
+      "materialQuality": "Premium",
+      "furnitureItems": [
+        "Sofa",
+        "Workstation"
+      ],
+      "furnitureOptions": {},
+      "lightingType": "Basic",
+      "labourCost": 12,
+      "tax": 18,
+      "discount": 5,
+      "taxPercentage": null,
+      "discountPercentage": null,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 101700,
+      "total": 114921,
+      "costBreakdown": {
+        "materialCost": 52500,
+        "furnitureCost": 40000,
+        "lightingCost": 5000,
+        "labourCost": 4200,
+        "subtotal": 101700,
+        "taxAmount": 18306,
+        "discountAmount": 5085,
+        "tax": 18306,
+        "discount": 5085,
+        "grandTotal": 114921
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-19T14:43:25.648Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-19T14:43:25.658Z"
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-19T14:43:25.648Z"
+    },
+    {
+      "id": "Q-2026-004",
+      "clientId": "CLI-007",
+      "clientName": "Glory Simon Client",
+      "phone": "555-0199",
+      "email": "glory.client@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Springfield",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [],
+      "furnitureOptions": {
+        "modularKitchen": true,
+        "tvUnit": true
+      },
+      "lightingType": "Decorative",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 10,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 86250,
+      "total": null,
+      "costBreakdown": {
+        "materialCost": 67500,
+        "furnitureCost": 0,
+        "lightingCost": 12000,
+        "labourCost": 6750,
+        "subtotal": 86250,
+        "taxAmount": null,
+        "discountAmount": null,
+        "tax": null,
+        "discount": null,
+        "grandTotal": null
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-19T15:42:07.407Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-19T15:42:07.453Z"
+        }
+      ],
+      "notes": "Test saved quote via node test runner",
+      "createdAt": "2026-06-19T15:42:07.407Z"
+    },
+    {
+      "id": "Q-2026-005",
+      "clientId": "CLI-008",
+      "clientName": "Glory Simon Client",
+      "phone": "555-0199",
+      "email": "glory.client@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Springfield",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [],
+      "furnitureOptions": {
+        "modularKitchen": true,
+        "tvUnit": true
+      },
+      "lightingType": "Decorative",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 10,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 86250,
+      "total": null,
+      "costBreakdown": {
+        "materialCost": 67500,
+        "furnitureCost": 0,
+        "lightingCost": 12000,
+        "labourCost": 6750,
+        "subtotal": 86250,
+        "taxAmount": null,
+        "discountAmount": null,
+        "tax": null,
+        "discount": null,
+        "grandTotal": null
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-19T15:42:35.373Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-19T15:42:35.381Z"
+        }
+      ],
+      "notes": "Test saved quote via node test runner",
+      "createdAt": "2026-06-19T15:42:35.373Z"
+    },
+    {
+      "id": "Q-2026-006",
+      "clientId": "CLI-009",
+      "clientName": "Glory Simon Client",
+      "phone": "555-0199",
+      "email": "glory.client@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Springfield",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [],
+      "furnitureOptions": {
+        "modularKitchen": true,
+        "tvUnit": true
+      },
+      "lightingType": "Decorative",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 10,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 86250,
+      "total": 93150,
+      "costBreakdown": {
+        "materialCost": 67500,
+        "furnitureCost": 0,
+        "lightingCost": 12000,
+        "labourCost": 6750,
+        "subtotal": 86250,
+        "taxAmount": 15525,
+        "discountAmount": 8625,
+        "tax": 15525,
+        "discount": 8625,
+        "grandTotal": 93150
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-19T15:43:09.298Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-19T15:43:09.308Z"
+        }
+      ],
+      "notes": "Test saved quote via node test runner",
+      "createdAt": "2026-06-19T15:43:09.298Z"
+    },
+    {
+      "id": "Q-2026-007",
+      "clientId": "CLI-010",
+      "clientName": "Glory Simon Client",
+      "phone": "555-0199",
+      "email": "glory.client@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Springfield",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [],
+      "furnitureOptions": {
+        "modularKitchen": true,
+        "tvUnit": true
+      },
+      "lightingType": "Decorative",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 10,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 86250,
+      "total": 93150,
+      "costBreakdown": {
+        "materialCost": 67500,
+        "furnitureCost": 0,
+        "lightingCost": 12000,
+        "labourCost": 6750,
+        "subtotal": 86250,
+        "taxAmount": 15525,
+        "discountAmount": 8625,
+        "tax": 15525,
+        "discount": 8625,
+        "grandTotal": 93150
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-20T03:02:39.550Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-20T03:02:39.565Z"
+        }
+      ],
+      "notes": "Test saved quote via node test runner",
+      "createdAt": "2026-06-20T03:02:39.551Z"
+    },
+    {
+      "id": "Q-2026-008",
+      "clientId": "CLI-011",
+      "clientName": "Glory Simon Client",
+      "phone": "555-0199",
+      "email": "glory.client@example.com",
+      "address": "742 Evergreen Terrace",
+      "projectType": "Residential",
+      "projectLocation": "Springfield",
+      "roomType": "Living Room",
+      "area": 450,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Standard",
+      "materialQuality": "Standard",
+      "furnitureItems": [],
+      "furnitureOptions": {
+        "modularKitchen": true,
+        "tvUnit": true
+      },
+      "lightingType": "Decorative",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 10,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 86250,
+      "total": 93150,
+      "costBreakdown": {
+        "materialCost": 67500,
+        "furnitureCost": 0,
+        "lightingCost": 12000,
+        "labourCost": 6750,
+        "subtotal": 86250,
+        "taxAmount": 15525,
+        "discountAmount": 8625,
+        "tax": 15525,
+        "discount": 8625,
+        "grandTotal": 93150
+      },
+      "status": "Approved",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-20T03:57:43.745Z"
+        },
+        {
+          "status": "Approved",
+          "timestamp": "2026-06-20T03:57:43.752Z"
+        }
+      ],
+      "notes": "Test saved quote via node test runner",
+      "createdAt": "2026-06-20T03:57:43.745Z"
+    },
+    {
+      "id": "Q-2026-009",
+      "clientId": "CLI-012",
+      "clientName": "Integration Test Client 1782134855772",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "projectType": "Residential",
+      "projectLocation": "",
+      "roomType": "Living Room",
+      "area": 500,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Premium",
+      "materialQuality": "Premium",
+      "furnitureItems": [],
+      "furnitureOptions": {},
+      "lightingType": "Basic",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 5,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 102500,
+      "total": 115825,
+      "costBreakdown": {
+        "materialCost": 90000,
+        "furnitureCost": 0,
+        "lightingCost": 5000,
+        "labourCost": 7500,
+        "subtotal": 102500,
+        "taxAmount": 18450,
+        "discountAmount": 5125,
+        "tax": 18450,
+        "discount": 5125,
+        "grandTotal": 115825
+      },
+      "status": "Draft",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-22T13:27:35.787Z"
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-22T13:27:35.787Z"
+    },
+    {
+      "id": "Q-2026-010",
+      "clientId": "CLI-014",
+      "clientName": "Integration Test Client 1782307431195",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "projectType": "Residential",
+      "projectLocation": "",
+      "roomType": "Living Room",
+      "area": 500,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Premium",
+      "materialQuality": "Premium",
+      "furnitureItems": [],
+      "furnitureOptions": {},
+      "lightingType": "Basic",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 5,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 102500,
+      "total": 115825,
+      "costBreakdown": {
+        "materialCost": 90000,
+        "furnitureCost": 0,
+        "lightingCost": 5000,
+        "labourCost": 7500,
+        "subtotal": 102500,
+        "taxAmount": 18450,
+        "discountAmount": 5125,
+        "tax": 18450,
+        "discount": 5125,
+        "grandTotal": 115825
+      },
+      "status": "Draft",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-24T13:23:51.215Z"
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-24T13:23:51.215Z"
+    },
+    {
+      "id": "Q-2026-011",
+      "clientId": "CLI-015",
+      "clientName": "Integration Test Client 1782307646451",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "projectType": "Residential",
+      "projectLocation": "",
+      "roomType": "Living Room",
+      "area": 500,
+      "numRooms": 1,
+      "scopeOfWork": "",
+      "materialLevel": "Premium",
+      "materialQuality": "Premium",
+      "furnitureItems": [],
+      "furnitureOptions": {},
+      "lightingType": "Basic",
+      "labourCost": 15,
+      "tax": null,
+      "discount": null,
+      "taxPercentage": 18,
+      "discountPercentage": 5,
+      "installationCharges": 0,
+      "otherCharges": 0,
+      "subtotal": 102500,
+      "total": 115825,
+      "costBreakdown": {
+        "materialCost": 90000,
+        "furnitureCost": 0,
+        "lightingCost": 5000,
+        "labourCost": 7500,
+        "subtotal": 102500,
+        "taxAmount": 18450,
+        "discountAmount": 5125,
+        "tax": 18450,
+        "discount": 5125,
+        "grandTotal": 115825
+      },
+      "status": "Draft",
+      "statusHistory": [
+        {
+          "status": "Draft",
+          "timestamp": "2026-06-24T13:27:26.474Z"
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-24T13:27:26.475Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "ACT-001",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-001",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "timestamp": "2026-06-19T12:00:00.000Z"
+    },
+    {
+      "id": "ACT-002",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-001",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "timestamp": "2026-06-19T12:30:00.000Z"
+    },
+    {
+      "id": "ACT-1781880205594",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-006",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T14:43:25.594Z"
+    },
+    {
+      "id": "ACT-1781880205633",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-005",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T14:43:25.633Z"
+    },
+    {
+      "id": "ACT-1781880205649",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-003",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T14:43:25.649Z"
+    },
+    {
+      "id": "ACT-1781880205658",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-003",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T14:43:25.658Z"
+    },
+    {
+      "id": "ACT-1781883727377",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-007",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:07.377Z"
+    },
+    {
+      "id": "ACT-1781883727393",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-006",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:07.393Z"
+    },
+    {
+      "id": "ACT-1781883727409",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-004",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:07.409Z"
+    },
+    {
+      "id": "ACT-1781883727453",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-004",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:07.453Z"
+    },
+    {
+      "id": "ACT-1781883755351",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-008",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:35.351Z"
+    },
+    {
+      "id": "ACT-1781883755363",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-007",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:35.363Z"
+    },
+    {
+      "id": "ACT-1781883755374",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-005",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:35.374Z"
+    },
+    {
+      "id": "ACT-1781883755381",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-005",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:42:35.381Z"
+    },
+    {
+      "id": "ACT-1781883789255",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-009",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:43:09.255Z"
+    },
+    {
+      "id": "ACT-1781883789281",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-008",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:43:09.281Z"
+    },
+    {
+      "id": "ACT-1781883789300",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-006",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:43:09.300Z"
+    },
+    {
+      "id": "ACT-1781883789308",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-006",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-19T15:43:09.308Z"
+    },
+    {
+      "id": "ACT-1781924559518",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-010",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:02:39.518Z"
+    },
+    {
+      "id": "ACT-1781924559536",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-009",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:02:39.536Z"
+    },
+    {
+      "id": "ACT-1781924559552",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-007",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:02:39.552Z"
+    },
+    {
+      "id": "ACT-1781924559565",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-007",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:02:39.565Z"
+    },
+    {
+      "id": "ACT-1781927863725",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-011",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:57:43.725Z"
+    },
+    {
+      "id": "ACT-1781927863735",
+      "action": "Site Visit Scheduled",
+      "entityType": "SiteVisits",
+      "entityId": "SV-010",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:57:43.735Z"
+    },
+    {
+      "id": "ACT-1781927863746",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-008",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:57:43.746Z"
+    },
+    {
+      "id": "ACT-1781927863752",
+      "action": "Quotation Approved",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-008",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-20T03:57:43.752Z"
+    },
+    {
+      "id": "ACT-1782134855776",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-012",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-22T13:27:35.776Z"
+    },
+    {
+      "id": "ACT-1782134855789",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-009",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-22T13:27:35.789Z"
+    },
+    {
+      "id": "ACT-1782135274100",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-013",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-22T13:34:34.100Z"
+    },
+    {
+      "id": "ACT-1782307431202",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-014",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-24T13:23:51.202Z"
+    },
+    {
+      "id": "ACT-1782307431219",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-010",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-24T13:23:51.219Z"
+    },
+    {
+      "id": "ACT-1782307646461",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-015",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-24T13:27:26.461Z"
+    },
+    {
+      "id": "ACT-1782307646477",
+      "action": "Quotation Created",
+      "entityType": "Quotations",
+      "entityId": "Q-2026-011",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-24T13:27:26.477Z"
+    },
+    {
+      "id": "ACT-1782307946070",
+      "action": "Client Created",
+      "entityType": "Clients",
+      "entityId": "CLI-016",
+      "userId": "UID-ADMIN",
+      "userName": "Admin User",
+      "user": "Admin User",
+      "timestamp": "2026-06-24T13:32:26.070Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-001",
+      "title": "Quotation Q-2026-001 Approved",
+      "message": "Client David Harrison has approved the quotation for their Living Room redesign.",
+      "status": "Read",
+      "createdAt": "2026-06-19T12:00:00.000Z"
+    },
+    {
+      "id": "NTF-002",
+      "title": "New Site Visit Scheduled",
+      "message": "A site visit for Robert Downey is scheduled on June 25th at 11:00 AM.",
+      "status": "Read",
+      "createdAt": "2026-06-19T14:00:00.000Z"
+    },
+    {
+      "id": "NTF-003",
+      "title": "System Update",
+      "message": "QAEMS has been updated to version 2.5. Support for invoice generation and multi-user roles is live.",
+      "status": "Read",
+      "createdAt": "2026-06-18T10:00:00.000Z"
+    },
+    {
+      "id": "NTF-1781880205595",
+      "title": "Client Registered",
+      "message": "Client profile for Alice Miller initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-19T14:43:25.595Z"
+    },
+    {
+      "id": "NTF-1781880205634",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Alice Miller on 2026-06-22T09:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-19T14:43:25.634Z"
+    },
+    {
+      "id": "NTF-1781880205649",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-003 has been created for client Alice Miller.",
+      "status": "Read",
+      "createdAt": "2026-06-19T14:43:25.649Z"
+    },
+    {
+      "id": "NTF-1781880205660",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-003 for client Alice Miller status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-19T14:43:25.660Z"
+    },
+    {
+      "id": "NTF-1781883727379",
+      "title": "Client Registered",
+      "message": "Client profile for Glory Simon Client initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:07.379Z"
+    },
+    {
+      "id": "NTF-1781883727395",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Glory Simon Client on 2026-06-25T10:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:07.395Z"
+    },
+    {
+      "id": "NTF-1781883727411",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-004 has been created for client Glory Simon Client.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:07.411Z"
+    },
+    {
+      "id": "NTF-1781883727455",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-004 for client Glory Simon Client status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:07.455Z"
+    },
+    {
+      "id": "NTF-1781883755352",
+      "title": "Client Registered",
+      "message": "Client profile for Glory Simon Client initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:35.352Z"
+    },
+    {
+      "id": "NTF-1781883755363",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Glory Simon Client on 2026-06-25T10:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:35.363Z"
+    },
+    {
+      "id": "NTF-1781883755375",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-005 has been created for client Glory Simon Client.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:35.375Z"
+    },
+    {
+      "id": "NTF-1781883755384",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-005 for client Glory Simon Client status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:42:35.384Z"
+    },
+    {
+      "id": "NTF-1781883789257",
+      "title": "Client Registered",
+      "message": "Client profile for Glory Simon Client initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:43:09.257Z"
+    },
+    {
+      "id": "NTF-1781883789283",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Glory Simon Client on 2026-06-25T10:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:43:09.283Z"
+    },
+    {
+      "id": "NTF-1781883789302",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-006 has been created for client Glory Simon Client.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:43:09.302Z"
+    },
+    {
+      "id": "NTF-1781883789311",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-006 for client Glory Simon Client status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-19T15:43:09.311Z"
+    },
+    {
+      "id": "NTF-1781924559520",
+      "title": "Client Registered",
+      "message": "Client profile for Glory Simon Client initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:02:39.520Z"
+    },
+    {
+      "id": "NTF-1781924559538",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Glory Simon Client on 2026-06-25T10:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:02:39.538Z"
+    },
+    {
+      "id": "NTF-1781924559554",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-007 has been created for client Glory Simon Client.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:02:39.554Z"
+    },
+    {
+      "id": "NTF-1781924559568",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-007 for client Glory Simon Client status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:02:39.568Z"
+    },
+    {
+      "id": "NTF-1781927863726",
+      "title": "Client Registered",
+      "message": "Client profile for Glory Simon Client initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:57:43.726Z"
+    },
+    {
+      "id": "NTF-1781927863736",
+      "title": "Site Visit Booked",
+      "message": "A new site visit has been scheduled for Glory Simon Client on 2026-06-25T10:00:00.000Z with designer Sarah Jenkins.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:57:43.736Z"
+    },
+    {
+      "id": "NTF-1781927863747",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-008 has been created for client Glory Simon Client.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:57:43.747Z"
+    },
+    {
+      "id": "NTF-1781927863755",
+      "title": "Quotation Approved",
+      "message": "Quotation Q-2026-008 for client Glory Simon Client status shifted to Approved.",
+      "status": "Read",
+      "createdAt": "2026-06-20T03:57:43.755Z"
+    },
+    {
+      "id": "NTF-1782134855780",
+      "title": "Client Registered",
+      "message": "Client profile for Integration Test Client 1782134855772 initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-22T13:27:35.780Z"
+    },
+    {
+      "id": "NTF-1782134855791",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-009 has been created for client Integration Test Client 1782134855772.",
+      "status": "Read",
+      "createdAt": "2026-06-22T13:27:35.791Z"
+    },
+    {
+      "id": "NTF-1782135274106",
+      "title": "Client Registered",
+      "message": "Client profile for Praisy Rachamadugu initialized in CRM.",
+      "status": "Read",
+      "createdAt": "2026-06-22T13:34:34.106Z"
+    },
+    {
+      "id": "NTF-1782307431204",
+      "title": "Client Registered",
+      "message": "Client profile for Integration Test Client 1782307431195 initialized in CRM.",
+      "status": "Unread",
+      "createdAt": "2026-06-24T13:23:51.204Z"
+    },
+    {
+      "id": "NTF-1782307431223",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-010 has been created for client Integration Test Client 1782307431195.",
+      "status": "Unread",
+      "createdAt": "2026-06-24T13:23:51.223Z"
+    },
+    {
+      "id": "NTF-1782307646464",
+      "title": "Client Registered",
+      "message": "Client profile for Integration Test Client 1782307646451 initialized in CRM.",
+      "status": "Unread",
+      "createdAt": "2026-06-24T13:27:26.464Z"
+    },
+    {
+      "id": "NTF-1782307646480",
+      "title": "New Quotation Generated",
+      "message": "Quotation Q-2026-011 has been created for client Integration Test Client 1782307646451.",
+      "status": "Unread",
+      "createdAt": "2026-06-24T13:27:26.480Z"
+    },
+    {
+      "id": "NTF-1782307946076",
+      "title": "Client Registered",
+      "message": "Client profile for Pravallika initialized in CRM.",
+      "status": "Unread",
+      "createdAt": "2026-06-24T13:32:26.076Z"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900 transition-colors duration-200;
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+  }
+  .dark .glass-panel {
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dark .glass-card {
+    background-color: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.05);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+  .dark .glass-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+    border-color: rgba(59, 130, 246, 0.25);
+  }
+
+  .glass-input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dark .glass-input {
+    background-color: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f8fafc;
+  }
+  .glass-input:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  }
+  .dark .glass-input:focus {
+    background-color: #0f172a;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  }
+
+  .glass-btn-primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .glass-btn-primary:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.35);
+  }
+  .glass-btn-primary:active {
+    transform: scale(0.97);
+  }
+
+  .glass-btn-secondary {
+    background-color: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 1);
+    color: #64748b;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  .dark .glass-btn-secondary {
+    background-color: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+  }
+  .glass-btn-secondary:hover {
+    background-color: #f8fafc;
+    color: #0f172a;
+    border-color: rgba(203, 213, 225, 1);
+  }
+  .dark .glass-btn-secondary:hover {
+    background-color: rgba(30, 41, 59, 0.7);
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  .glass-btn-secondary:active {
+    transform: scale(0.97);
+  }
+}
+
+@media print {
+  html, body {
+    background-color: white !important;
+    background-image: none !important;
+    color: black !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  /* Hide all dashboard layout components on print */
+  aside, 
+  header, 
+  nav, 
+  button, 
+  .no-print, 
+  #navbar-bell-btn,
+  .workspace-tour-btn, 
+  #tour-guide-container,
+  .tour-guide-bubble {
+    display: none !important;
+  }
+
+  /* Force container parents of print targets to fit normal layout flow */
+  div, main, section {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: static !important;
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Isolate and format the print proposal sheet card */
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: white !important;
+    display: block !important;
+  }
+
+  /* Keep table elements clean on paper */
+  table {
+    page-break-inside: avoid;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+}

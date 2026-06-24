@@ -1,4 +1,12 @@
 {
+  "name": "qaems-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix backend && npm install --prefix qaems",
+    "build": "npm run build --prefix qaems",
+    "start": "node backend/server.js"
+  },
   "dependencies": {
     "@mui/material": "^9.1.1",
     "axios": "^1.17.0",
