@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@mui/material": "^9.1.1",
+    "axios": "^1.17.0",
+    "lucide-react": "^1.17.0",
+    "package-name": "^0.1.0",
+    "react-router-dom": "^7.17.0"
+  }
+}
