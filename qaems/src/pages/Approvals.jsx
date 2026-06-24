@@ -21,6 +21,7 @@ export default function Approvals() {
   const navigate = useNavigate();
   const [quotes, setQuotes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   const columns = [
@@ -32,16 +33,49 @@ export default function Approvals() {
   ];
 
   useEffect(() => {
+    let active = true;
     setLoading(true);
+    setError(null);
+    
+    const fetchQuotes = async () => {
+      try {
+        const data = await quotationService.getQuotations();
+        if (active) {
+          setQuotes(Array.isArray(data) ? data : []);
+        }
+      } catch (err) {
+        console.error("Failed to load quotations:", err);
+        if (active) {
+          setError("Failed to connect to quotation service API endpoint.");
+          setQuotes([]);
+        }
+      } finally {
+        if (active) {
+          setLoading(false);
+        }
+      }
+    };
+
     const timer = setTimeout(() => {
-      loadQuotes();
-      setLoading(false);
+      fetchQuotes();
     }, 550);
-    return () => clearTimeout(timer);
+
+    return () => {
+      active = false;
+      clearTimeout(timer);
+    };
   }, []);
 
-  const loadQuotes = () => {
-    setQuotes(quotationService.getQuotations());
+  const loadQuotes = async () => {
+    try {
+      setError(null);
+      const data = await quotationService.getQuotations();
+      setQuotes(Array.isArray(data) ? data : []);
+    } catch (err) {
+      console.error("Reload failed:", err);
+      setError("Reload failed. Please verify API server connectivity.");
+      setQuotes([]);
+    }
   };
 
   // Drag and Drop Logic
@@ -64,13 +98,18 @@ export default function Approvals() {
     }
   };
 
-  const updateQuoteStatus = (quoteId, nextStatus) => {
-    const quote = quotes.find((q) => q.id === quoteId);
+  const updateQuoteStatus = async (quoteId, nextStatus) => {
+    const quote = Array.isArray(quotes) ? quotes.find((q) => q.id === quoteId) : null;
     if (!quote) return;
 
     const updated = { ...quote, status: nextStatus };
-    quotationService.updateQuotation(quoteId, updated);
-    loadQuotes();
+    try {
+      await quotationService.updateQuotation(quoteId, updated);
+      await loadQuotes();
+    } catch (err) {
+      console.error("Failed to update status:", err);
+      setError("Failed to save updated status to API backend.");
+    }
   };
 
   // Mobile navigation backup
@@ -92,12 +131,12 @@ export default function Approvals() {
   const currencySymbol = settings.currencySymbol || "$";
 
   // Filter quotes based on search query
-  const filteredQuotes = quotes.filter(
+  const filteredQuotes = Array.isArray(quotes) ? quotes.filter(
     (q) =>
-      q.clientName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      q.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (q.projectLocation && q.projectLocation.toLowerCase().includes(searchQuery.toLowerCase()))
-  );
+      (q.clientName || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (q.id || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (q.projectLocation || "").toLowerCase().includes(searchQuery.toLowerCase())
+  ) : [];
 
   const getPriority = (grandTotal) => {
     if (grandTotal >= 50000) return { label: "High", color: "bg-rose-50 text-rose-600 dark:bg-rose-950/20 dark:text-rose-400" };
@@ -119,6 +158,33 @@ export default function Approvals() {
             <div key={i} className="h-96 bg-slate-150 dark:bg-slate-900 rounded-2xl" />
           ))}
         </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="space-y-6 animate-fade-in select-none p-6">
+        <div className="flex items-center gap-3 border-b pb-4 dark:border-slate-800">
+          <div className="p-2 bg-rose-50 dark:bg-rose-950/40 text-rose-500 rounded-lg">
+            <AlertCircle className="h-6 w-6" />
+          </div>
+          <div>
+            <h1 className="text-xl font-bold text-slate-900 dark:text-white">
+              Quotation Approval Pipeline
+            </h1>
+            <p className="text-xs text-rose-500 font-semibold">
+              Connection error or service failure detected.
+            </p>
+          </div>
+        </div>
+        <EmptyState
+          icon={AlertCircle}
+          title="Service Connection Error"
+          description={error}
+          actionText="Retry Connection"
+          onAction={loadQuotes}
+        />
       </div>
     );
   }
