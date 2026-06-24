@@ -34,6 +34,9 @@ export const api = {
         if (response.status === 401) {
           localStorage.removeItem("qaems_token");
           localStorage.removeItem("qaems_user");
+          if (typeof window !== "undefined" && window.location.pathname !== "/login") {
+            window.location.href = "/login";
+          }
         }
         throw new Error(json.message || json.errors?.[0] || `Request failed with status ${response.status}`);
       }
