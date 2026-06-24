@@ -275,6 +275,7 @@ const renderDocs = (req, res) => {
     <div class="grid">
       <nav>
         <h3>Modules</h3>
+        <a href="#auth">Authentication</a>
         <a href="#clients">Client Management</a>
         <a href="#visits">Site Visits</a>
         <a href="#quotations">Quotations Engine</a>
@@ -284,6 +285,42 @@ const renderDocs = (req, res) => {
       </nav>
 
       <main>
+        <!-- Authentication Card -->
+        <section id="auth" class="card">
+          <div class="card-title">Authentication</div>
+          
+          <div class="endpoint">
+            <div class="endpoint-header">
+              <span class="method post">POST</span>
+              <span class="path">/auth/login</span>
+            </div>
+            <div class="desc">Authenticates user credentials and returns a secure token along with user metadata.</div>
+            <div class="section-title">Sample Response</div>
+            <pre><code>{
+  "success": true,
+  "message": "Success",
+  "data": {
+    "token": "mock-token-uid-admin",
+    "user": {
+      "id": "UID-ADMIN",
+      "email": "admin@glorysimon.com",
+      "name": "Admin User",
+      "role": "Admin",
+      "createdAt": "2026-06-19T10:00:00.000Z"
+    }
+  }
+}</code></pre>
+          </div>
+
+          <div class="endpoint">
+            <div class="endpoint-header">
+              <span class="method post">POST</span>
+              <span class="path">/auth/register</span>
+            </div>
+            <div class="desc">Registers a new developer user profile.</div>
+          </div>
+        </section>
+
         <!-- Clients Card -->
         <section id="clients" class="card">
           <div class="card-title">Client Management</div>
