@@ -250,55 +250,55 @@ export default function QuotationDetails() {
             <div className="space-y-3 text-xs">
               <div className="flex justify-between">
                 <span className="text-gray-500">Base Cost:</span>
-                <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown?.roomCost.toLocaleString()}</span>
+                <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown?.roomCost || 0).toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Material Cost:</span>
-                <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown?.materialCost.toLocaleString()}</span>
+                <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown?.materialCost || 0).toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Furniture Cost:</span>
-                <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown?.furnitureCost.toLocaleString()}</span>
+                <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown?.furnitureCost || 0).toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Lighting Cost:</span>
-                <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown?.lightingCost.toLocaleString()}</span>
+                <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown?.lightingCost || 0).toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-500">Labour charges:</span>
-                <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown?.labourCost.toLocaleString()}</span>
+                <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown?.labourCost || 0).toLocaleString()}</span>
               </div>
-              {quote.costBreakdown?.installationCharges > 0 && (
+              {(quote.costBreakdown?.installationCharges || 0) > 0 && (
                 <div className="flex justify-between">
                   <span className="text-gray-500">Installation:</span>
-                  <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown.installationCharges.toLocaleString()}</span>
+                  <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown.installationCharges || 0).toLocaleString()}</span>
                 </div>
               )}
-              {quote.costBreakdown?.otherCharges > 0 && (
+              {(quote.costBreakdown?.otherCharges || 0) > 0 && (
                 <div className="flex justify-between">
                   <span className="text-gray-500">Other charges:</span>
-                  <span className="font-semibold">{settings.currencySymbol}{quote.costBreakdown.otherCharges.toLocaleString()}</span>
+                  <span className="font-semibold">{settings.currencySymbol}{(quote.costBreakdown.otherCharges || 0).toLocaleString()}</span>
                 </div>
               )}
 
               <div className="border-t pt-3 space-y-2">
                 <div className="flex justify-between font-semibold">
                   <span>Subtotal:</span>
-                  <span>{settings.currencySymbol}{quote.costBreakdown?.subtotal.toLocaleString()}</span>
+                  <span>{settings.currencySymbol}{(quote.costBreakdown?.subtotal || 0).toLocaleString()}</span>
                 </div>
-                {quote.costBreakdown?.discountAmount > 0 && (
+                {(quote.costBreakdown?.discountAmount || 0) > 0 && (
                   <div className="flex justify-between text-emerald-600 font-semibold">
                     <span>Discount ({quote.discountPercentage}%):</span>
-                    <span>-{settings.currencySymbol}{quote.costBreakdown.discountAmount.toLocaleString()}</span>
+                    <span>-{settings.currencySymbol}{(quote.costBreakdown.discountAmount || 0).toLocaleString()}</span>
                   </div>
                 )}
                 <div className="flex justify-between text-gray-400 font-semibold">
                   <span>GST/Tax ({quote.costBreakdown?.taxPercentage}%):</span>
-                  <span>+{settings.currencySymbol}{quote.costBreakdown?.taxAmount.toLocaleString()}</span>
+                  <span>+{settings.currencySymbol}{(quote.costBreakdown?.taxAmount || 0).toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-brand-bronze dark:text-brand-gold font-bold text-sm bg-brand-gold/10 p-3 rounded-lg border">
                   <span>Grand Total:</span>
-                  <span>{settings.currencySymbol}{quote.costBreakdown?.grandTotal.toLocaleString()}</span>
+                  <span>{settings.currencySymbol}{(quote.costBreakdown?.grandTotal || 0).toLocaleString()}</span>
                 </div>
               </div>
             </div>

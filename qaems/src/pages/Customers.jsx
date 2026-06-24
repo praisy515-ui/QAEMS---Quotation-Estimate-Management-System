@@ -472,7 +472,7 @@ export default function Customers() {
                       </div>
                       <span className="font-semibold text-[10px] text-slate-800 dark:text-slate-200">
                         {currencySymbol}
-                        {q.costBreakdown?.grandTotal.toLocaleString()}
+                        {(q.costBreakdown?.grandTotal || 0).toLocaleString()}
                       </span>
                     </div>
                   ))

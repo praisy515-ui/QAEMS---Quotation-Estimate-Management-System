@@ -221,11 +221,17 @@ export const quotationService = {
 
   // Notifications API
   getNotifications: async () => {
-    const list = await api.get("/notifications");
-    return list.map(n => ({
-      ...n,
-      time: n.createdAt ? new Date(n.createdAt).toLocaleDateString() : 'N/A'
-    }));
+    try {
+      const list = await api.get("/notifications");
+      const arr = Array.isArray(list) ? list : (list && Array.isArray(list.data) ? list.data : []);
+      return arr.map(n => ({
+        ...n,
+        time: n.createdAt ? new Date(n.createdAt).toLocaleDateString() : 'N/A'
+      }));
+    } catch (err) {
+      console.error("Failed to load notifications:", err);
+      return [];
+    }
   },
   markAllNotificationsRead: async () => {
     return api.post("/notifications/read-all", {});

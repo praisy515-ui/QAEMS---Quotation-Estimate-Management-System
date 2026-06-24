@@ -227,7 +227,7 @@ export default function ClientDetails() {
                     <div className="text-right">
                       <span className="font-bold text-slate-800 dark:text-slate-200">
                         {currencySymbol}
-                        {q.costBreakdown?.grandTotal.toLocaleString()}
+                        {(q.costBreakdown?.grandTotal || 0).toLocaleString()}
                       </span>
                       <p className="text-[9px] text-slate-400 mt-0.5">{q.date}</p>
                     </div>

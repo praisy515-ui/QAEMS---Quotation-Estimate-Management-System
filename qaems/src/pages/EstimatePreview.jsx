@@ -207,46 +207,46 @@ export default function EstimatePreview() {
               </tr>
             </thead>
             <tbody className="divide-y text-gray-700 font-medium">
-              {quote.costBreakdown?.roomCost > 0 && (
+              {(quote.costBreakdown?.roomCost || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Structure & Layout Framing ({quote.projectType})</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.roomCost.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.roomCost || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.materialCost > 0 && (
+              {(quote.costBreakdown?.materialCost || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Material Supply & Finishes ({quote.materialQuality} Tier)</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.materialCost.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.materialCost || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.furnitureCost > 0 && (
+              {(quote.costBreakdown?.furnitureCost || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Custom Furniture & Cabinetry Fabrications</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.furnitureCost.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.furnitureCost || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.lightingCost > 0 && (
+              {(quote.costBreakdown?.lightingCost || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Electrical Fittings & Lighting Nodes ({quote.lightingType})</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.lightingCost.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.lightingCost || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.labourCost > 0 && (
+              {(quote.costBreakdown?.labourCost || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">On-site Artisan Labour charges</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.labourCost.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.labourCost || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.installationCharges > 0 && (
+              {(quote.costBreakdown?.installationCharges || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Delivery & Handling Fees</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.installationCharges.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.installationCharges || 0).toLocaleString()}</td>
                 </tr>
               )}
-              {quote.costBreakdown?.otherCharges > 0 && (
+              {(quote.costBreakdown?.otherCharges || 0) > 0 && (
                 <tr>
                   <td className="py-2.5">Other Miscellaneous Fees</td>
-                  <td className="py-2.5 text-right">{settings.currencySymbol}{quote.costBreakdown.otherCharges.toLocaleString()}</td>
+                  <td className="py-2.5 text-right">{settings.currencySymbol}{(quote.costBreakdown.otherCharges || 0).toLocaleString()}</td>
                 </tr>
               )}
             </tbody>
@@ -258,21 +258,21 @@ export default function EstimatePreview() {
           <div className="w-full sm:w-64 space-y-2 text-xs">
             <div className="flex justify-between text-gray-500 font-medium">
               <span>Subtotal:</span>
-              <span>{settings.currencySymbol}{quote.costBreakdown?.subtotal.toLocaleString()}</span>
+              <span>{settings.currencySymbol}{(quote.costBreakdown?.subtotal || 0).toLocaleString()}</span>
             </div>
-            {quote.costBreakdown?.discountAmount > 0 && (
+            {(quote.costBreakdown?.discountAmount || 0) > 0 && (
               <div className="flex justify-between text-emerald-600 font-medium">
                 <span>Discount ({quote.discountPercentage}%):</span>
-                <span>-{settings.currencySymbol}{quote.costBreakdown.discountAmount.toLocaleString()}</span>
+                <span>-{settings.currencySymbol}{(quote.costBreakdown.discountAmount || 0).toLocaleString()}</span>
               </div>
             )}
             <div className="flex justify-between text-gray-500 font-medium">
               <span>GST/Tax ({quote.costBreakdown?.taxPercentage}%):</span>
-              <span>+{settings.currencySymbol}{quote.costBreakdown?.taxAmount.toLocaleString()}</span>
+              <span>+{settings.currencySymbol}{(quote.costBreakdown?.taxAmount || 0).toLocaleString()}</span>
             </div>
             <div className="flex justify-between text-black font-bold text-sm bg-brand-cream/35 p-3 rounded-lg border-t-2">
               <span>Total Estimate:</span>
-              <span>{settings.currencySymbol}{quote.costBreakdown?.grandTotal.toLocaleString()}</span>
+              <span>{settings.currencySymbol}{(quote.costBreakdown?.grandTotal || 0).toLocaleString()}</span>
             </div>
           </div>
         </div>

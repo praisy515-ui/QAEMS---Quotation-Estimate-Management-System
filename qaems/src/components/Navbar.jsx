@@ -38,8 +38,9 @@ export default function Navbar({ onMenuClick }) {
     const loadNtf = async () => {
       try {
         const list = await quotationService.getNotifications();
-        setNotifications(list.slice(0, 5)); // show latest 5
-        setUnreadCount(list.filter((n) => n.status === "Unread" || !n.read).length);
+        const safeList = Array.isArray(list) ? list : [];
+        setNotifications(safeList.slice(0, 5)); // show latest 5
+        setUnreadCount(safeList.filter((n) => n.status === "Unread" || !n.read).length);
       } catch (err) {
         console.error("Failed to load notifications:", err);
       }
@@ -127,7 +128,8 @@ export default function Navbar({ onMenuClick }) {
       await quotationService.markAllNotificationsRead();
       // Reload notifications
       const list = await quotationService.getNotifications();
-      setNotifications(list.slice(0, 5));
+      const safeList = Array.isArray(list) ? list : [];
+      setNotifications(safeList.slice(0, 5));
       setUnreadCount(0);
       window.dispatchEvent(new Event("storage"));
     } catch (err) {
@@ -139,8 +141,9 @@ export default function Navbar({ onMenuClick }) {
     try {
       await quotationService.markNotificationRead(id);
       const list = await quotationService.getNotifications();
-      setNotifications(list.slice(0, 5));
-      setUnreadCount(list.filter(n => n.status === "Unread" || !n.read).length);
+      const safeList = Array.isArray(list) ? list : [];
+      setNotifications(safeList.slice(0, 5));
+      setUnreadCount(safeList.filter(n => n.status === "Unread" || !n.read).length);
       window.dispatchEvent(new Event("storage"));
       setNotificationDropdownOpen(false);
     } catch (err) {
